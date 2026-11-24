@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LiveData</string>
+    <string name="espectadors">Espectadors:</string>
+    <string name="_0">0</string>
+    <string name="disponible">Disponible</string>
+    <string name="_res1_espectador">+1 (Espectador)</string>
+    <string name="_sum1_espectador">-1 (Espectador)</string>
+    <string name="reiniciar">Reiniciar</string>
+</resources>

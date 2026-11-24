@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/Espectadors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/espectadors"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/Contador"
+            app:layout_constraintEnd_toStartOf="@id/Contador"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/_0"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Espectadors"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="@string/disponible"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Contador" />
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/_res1_espectador"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/btnRestar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Estado" />
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_sum1_espectador"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/btnSumar"
+            app:layout_constraintEnd_toStartOf="@id/btnReiniciar"
+            app:layout_constraintStart_toEndOf="@id/btnSumar" />
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reiniciar"
+            android:textSize="12sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/btnSumar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnRestar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
